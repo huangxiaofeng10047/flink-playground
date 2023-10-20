@@ -1,0 +1,13 @@
+{
+  "namespace": "com.ken.parquet",
+  "type": "record",
+  "name": "MarketPrice",
+  "fields": [
+    {"name":"performance_id", "type":"string"},
+    {"name":"price_as_of_date", "type":"int", "logicalType": "date"},
+    {"name":"open_price", "type": ["null", "double"], "default": null},
+    {"name":"high_price", "type": ["null", "double"], "default": null},
+    {"name":"low_price", "type": ["null", "double"], "default": null},
+    {"name":"close_price", "type": ["null", "double"], "default": null}
+  ]
+}
