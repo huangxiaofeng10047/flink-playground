@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Oct 19 14:24:34 CST 2023
+zookeeper-3.5.6.jar>maven-public=
+zookeeper-3.5.6.pom>maven-public=

@@ -25,3 +25,6 @@ hs_err_pid*
 replay_pid*
 docker/
 
+/wsl$ArchLinuxhomexfhuang.m2repository/
+/target/
+/.idea/

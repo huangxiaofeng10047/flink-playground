@@ -25,7 +25,7 @@ services:
       # 监听端口
       KAFKA_CFG_LISTENERS: PLAINTEXT://:9092
       # 实际访问ip 本地用 127 内网用 192 外网用 外网ip
-      KAFKA_CFG_ADVERTISED_LISTENERS: PLAINTEXT://172.31.13.24:9092
+      KAFKA_CFG_ADVERTISED_LISTENERS: PLAINTEXT://127.0.0.1:9092
       KAFKA_CFG_ZOOKEEPER_CONNECT: 127.0.0.1:2181
       ALLOW_PLAINTEXT_LISTENER: "yes"
     volumes:
@@ -38,13 +38,13 @@ services:
     image: sheepkiller/kafka-manager:latest
     container_name: kafka-manager
     ports:
-      - "19092:19092"
+      - "9000:9000"
     environment:
-      ZK_HOSTS: 127.0.0.1:2181
+      ZK_HOSTS: zookeeper:2181
       APPLICATION_SECRET: letmein
       KAFKA_MANAGER_USERNAME: ruoyi
       KAFKA_MANAGER_PASSWORD: ruoyi123
-      KM_ARGS: -Dhttp.port=19092
+#      KM_ARGS: -Dhttp.port=19092
     depends_on:
       - kafka
     network_mode: "host"

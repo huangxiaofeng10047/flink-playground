@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Oct 19 14:25:19 CST 2023
+commons-compress-1.21.jar>maven-public=
+commons-compress-1.21.pom>maven-public=

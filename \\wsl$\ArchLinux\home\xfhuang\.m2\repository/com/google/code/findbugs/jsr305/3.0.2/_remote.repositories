@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Oct 19 14:25:49 CST 2023
+jsr305-3.0.2.pom>maven-public=
+jsr305-3.0.2.jar>maven-public=
